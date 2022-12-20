@@ -81,9 +81,9 @@ article p{
 :root {
     --white: #afafaf;
     --red: #e31b23;
-    --bodyColor: #292a2b;
+    --bodyColor:  rgb(151, 144, 135);
     --borderFormEls: hsl(0, 0%, 10%);
-    --bgFormEls: hsl(0, 0%, 14%);
+    --bgFormEls: hsl(0, 0%, 100%);
     --bgFormElsFocus: hsl(0, 7%, 20%);
   }
   
@@ -115,7 +115,6 @@ article p{
     appearance: none;
   }
   
-  /* Remove native arrow on IE */
   select::-ms-expand {
     display: none;
   }
@@ -146,8 +145,6 @@ article p{
   }
   
   
-  /* FORM ELEMENTS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
   .my-form h1 {
     margin-bottom: 1.5rem;
   }
@@ -177,7 +174,6 @@ article p{
   
   .my-form ::placeholder {
     color: inherit;
-    /* Fix opacity issue on Firefox */
     opacity: 1;
   }
   
@@ -217,8 +213,7 @@ article p{
   }
   
   
-  /* FORM BTNS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
   .my-form .required-msg {
     display: none;
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/asterisk.svg)
@@ -260,8 +255,7 @@ article p{
   }
   
   
-  /* CUSTOM CHECKBOX
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
   .my-form input[type="checkbox"] {
     position: absolute;
     left: -9999px;
@@ -303,8 +297,6 @@ article p{
   }
   
   
-  /* FOOTER
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
   footer {
     font-size: 1rem;
     text-align: right;
@@ -319,9 +311,6 @@ article p{
     color: var(--red);
   }
   
-  
-  /* MQ
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
   @media screen and (min-width: 600px) {
     .my-form .grid {
       display: grid;
