@@ -49,6 +49,7 @@ h1{
     font-family: sans-serif;
     text-align: center;
 }
+
 .cuerpo1{
     margin: 20px;
     display: flex;
@@ -104,6 +105,15 @@ article p{
     font-size: 25px;
     margin: 0;  
 }
+
+
+
+
+
+
+
+
+
 .footer{
     background-image: url(/img/fondo.jpeg);
     background-size: cover;

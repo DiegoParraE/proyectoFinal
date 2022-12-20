@@ -9,6 +9,7 @@
     <title>Contáctanos</title>
 </head>
 <body>
+  <script src="./main.js" defer></script>
     <div class="menu">
         <header>
             <a href="/index.html">
@@ -29,7 +30,7 @@
         </div>
     </div> 
     
-    <form class="my-form">
+    <form class="my-form" method="post" action="#">
         <div class="container">
           <p>Te invitamos a diligenciar este formulario, si requieres recibir contacto por parte del equipo de CafeTeros:</p>
           <ul>
@@ -43,24 +44,24 @@
             </li>
             <li>
               <div class="grid grid-2">
-                <input type="text" placeholder="Nombres" required />
-                <input type="text" placeholder="Apellidos" required />
+                <input type="text" name="nombre" pattern="[a-zA-Z ]{2,254}" placeholder="Nombres" required />
+                <input type="text" name="apellido" pattern="[a-zA-Z ]{2,254}" placeholder="Apellidos" required />
               </div>
             </li>
             <li>
               <div class="grid grid-2">
-                <input type="email" placeholder="Email" required />
+                <input type="email" name="correo" placeholder="Email" required />
                 <input type="tel" placeholder="Teléfono" />
               </div>
             </li>
             <li>
-              <textarea placeholder="Mensaje"></textarea>
+              <textarea name="mensaje" placeholder="Mensaje"></textarea>
             </li>
             <li>
               <input type="checkbox" id="terms" />
               <label for="terms"
                 >Sucribase a nuestras las notificaciones y actualizaciones
-                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx_-HGD-6C099GRYLfrTOuq3Wklk1MHFC5lQ&usqp=CAU">consulta los términos y condiciones del website</a></label
+                consulta los términos y condiciones del website</a></label
               >
             </li>
             <li>
@@ -77,7 +78,10 @@
                 </button>
           </small>
         </div>
-
+          <button id="getUsers">Imprimir data</button>
+          <div>
+            <ul id="dataUserGet"></ul>
+          </div>
     <footer class="footer">
         <a href="/index.html"><img src="/img/logo.png" alt="logo de cafeteros"></a>
         <p>&copy; Desarrollada por Error404 2022 en BIT - Bogotá</p>
